@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hasna Hena Jui | Compute-in-Memory & Neuromorphic Hardware</title>
+<meta name="description" content="Hasna Hena Jui: EEE graduate, BRAC University. Research in SRAM compute-in-memory, neuromorphic hardware and emerging memory devices.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topbar">
+  <a class="brand" href="#top"><span class="path">~/</span>hh-jui<span class="caret" aria-hidden="true"></span></a>
+  <ul>
+    <li><a href="#research">research</a></li>
+    <li><a href="#publications">publications</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#leadership">leadership</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#photos">photos</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-text">
+    <p class="kicker"><span class="acc">&gt;</span> electrical &amp; electronic engineering · brac university · dhaka</p>
+    <h1>Hasna Hena Jui<span class="caret" aria-hidden="true"></span></h1>
+    <p class="whoami"><span class="acc">$ whoami</span> vlsi researcher · compute-in-memory · neuromorphic hardware</p>
+    <p class="tagline">I design memory that computes. My work puts logic inside SRAM and memristor arrays so AI hardware wastes less energy moving data.</p>
+
+    <div class="links">
+      <a class="btn primary" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV</a>
+      <a class="btn" href="mailto:hasna.hena.jui@g.bracu.ac.bd">Email</a>
+      <!-- GOOGLE SCHOLAR: paste your profile link (the one with citations?user=) in place of SCHOLAR_LINK and remove these comment marks
+      <a class="btn" href="SCHOLAR_LINK" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      -->
+      <a class="btn" href="https://www.researchgate.net/profile/Hasna-Hena-Jui" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+      <a class="btn" href="https://www.linkedin.com/in/hasna-hena-jui-8561a32aa" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="btn" href="https://github.com/Jui-H" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </div>
+
+  <div class="hero-photo">
+    <div class="orbit" aria-hidden="true"></div>
+    <span class="hud tl" aria-hidden="true">DHAKA · 23.8°N 90.4°E</span>
+    <span class="hud br" aria-hidden="true"><i></i>ONLINE</span>
+    <img src="assets/dp-slytherin.jpg" alt="Hasna Hena Jui">
+  </div>
+</header>
+
+<section class="glance" aria-label="Highlights">
+  <div class="stat vf"><span class="num">4 papers</span><span class="lbl">1 accepted at ISVLSI 2026, 2 submitted to IEEE TCAS-I and TVLSI, 1 co-authored at IAC 2026</span></div>
+  <div class="stat vf"><span class="num">5 threads</span><span class="lbl">SRAM and memristor compute-in-memory, neuromorphic checkpointing, and FinFET CAM</span></div>
+  <div class="stat vf"><span class="num">CanSat 2025</span><span class="lbl">Global finalist, BRACU Diganta, American Astronautical Society</span></div>
+  <div class="stat vf"><span class="num">3.67/4.00</span><span class="lbl">CGPA, B.Sc. in Electrical and Electronic Engineering, BRAC University</span></div>
+</section>
+
+<main class="container">
+
+  <section id="research" class="block">
+    <h2><span class="idx">01</span>Research</h2>
+    <p class="lede">My research sits where memory meets computation. I work on SRAM and memristor compute-in-memory circuits, the timing and device variation that breaks them, and the neural networks that run on them.</p>
+
+    <div class="tags">
+      <span>compute-in-memory</span><span>neuromorphic / SNN</span><span>emerging memory</span><span>vlsi design</span><span>hardware accelerators</span>
+    </div>
+
+    <article class="feature vf">
+      <div class="feature-img"><img src="images/tandem-core.png" alt="TANDEM core in ASAP7 7 nm: calibration controller, shared ramp generator, TTFS channels, 4x4 8T weight array with replica column, somas with 5-bit trims and arbiter; one TTFS inference frame; background calibration ticks"></div>
+      <div class="feature-body">
+        <p class="eyebrow">Featured · Submitted to IEEE TCAS-I</p>
+        <h3>TANDEM: a PVT-robust time-to-first-spike SRAM compute-in-memory core</h3>
+        <p><strong>What:</strong> A 7 nm ASAP7 8T SRAM compute-in-memory core that runs spiking neural networks, with on-chip calibration of timing and read charge.</p>
+        <p><strong>Result:</strong> Correct decisions across all 27 process, voltage and temperature corners (17 of 27 without calibration). 9.45 pJ per frame at 0.57 V, 26% less energy than at 0.63 V.</p>
+        <p><strong>Verification:</strong> Closed-loop SPICE–RTL co-simulation of 1,306 transistors, plus all 21 converged Monte Carlo samples.</p>
+        <p><strong>Accuracy:</strong> 98.68% on MNIST and 93.12% on CIFAR-10 with circuit-fitted SNN evaluation.</p>
+      </div>
+    </article>
+
+    <h3 class="sub">// research threads</h3>
+    <div class="threads">
+      <a class="thread vf" href="#prj-bnn"><span class="tstat accepted">Accepted · ISVLSI 2026</span><strong>Variation-aware SRAM CIM for BNNs</strong><span>Boolean logic in 6T SRAM; timing variation tied to MNIST accuracy</span></a>
+      <a class="thread vf" href="#prj-precis"><span class="tstat submitted">Submitted · TVLSI</span><strong>PRECIS-CAM</strong><span>Energy-efficient Hamming-distance search in FinFET SRAM-CAM</span></a>
+      <a class="thread vf" href="#prj-ternary"><span class="tstat progress">In progress</span><strong>Ternary memristive CIM</strong><span>Memristor crossbars for LLM inference with ternary weights</span></a>
+      <a class="thread vf" href="#prj-hfo2"><span class="tstat progress">In progress</span><strong>Normally-off LIF neuron</strong><span>HfO₂ RRAM checkpointing of membrane state after power gating</span></a>
+    </div>
+  </section>
+
+  <section id="publications" class="block">
+    <h2><span class="idx">02</span>Publications</h2>
+    <ol class="pubs">
+      <li>
+        <span class="tstat accepted">Accepted</span>
+        <p><strong>H. H. Jui</strong>, et al., “Variation-Aware SRAM Compute-in-Memory Boolean Architecture for Binary Neural Networks,” <em>IEEE Computer Society Annual Symposium on VLSI (ISVLSI)</em>, 2026.</p>
+      </li>
+      <li>
+        <span class="tstat submitted">Submitted</span>
+        <p><strong>H. H. Jui</strong>, M. T. A. Tonmoy, and T. Titirsha, “TANDEM: A PVT-Robust Time-to-First-Spike SRAM Compute-in-Memory Core With Background Replica-Based Timing Calibration in 7-nm FinFET,” <em>IEEE Transactions on Circuits and Systems I: Regular Papers</em>, 2026.</p>
+      </li>
+      <li>
+        <span class="tstat submitted">Submitted</span>
+        <p>M. T. A. Tonmoy, <strong>H. H. Jui</strong>, et al., “PRECIS-CAM: Exact Hamming-Threshold Search in FinFET SRAM-CAM with Certified Bank Skipping and PVT-Robust Replica-Referenced Sensing,” <em>IEEE Transactions on VLSI Systems</em>, 2026.</p>
+      </li>
+      <li>
+        <span class="tstat accepted">Co-author</span>
+        <p>M. M. Rahman, M. S. A. Prohor, <strong>H. H. Jui</strong>, et al., “Toward Predictive Marine Plastic Pollution Management: Integrating Sentinel-2, Deep Learning and Hydrodynamic Modeling,” <em>International Astronautical Congress (IAC/IAF)</em>, 2026.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="projects" class="block">
+    <h2><span class="idx">03</span>Projects</h2>
+    <p class="lede">Each project lists its goal, the key result, and my role, so you can get the point without opening anything else.</p>
+
+    <div class="grid">
+
+      <article class="card vf" id="prj-bnn">
+        <img class="fit" src="images/isvlsi-sram-cim.png" alt="Schematic of SRAM compute-in-memory cells computing AND, OR, NAND, NOR, XOR and XNOR">
+        <div class="card-body">
+          <div class="tags small"><span>SRAM CIM</span><span>BNN</span><span>45 nm</span></div>
+          <h3>Variation-aware SRAM CIM for Binary Neural Networks</h3>
+          <p><strong>Goal:</strong> Run Boolean logic (AND, OR, XOR, XNOR) inside 6T SRAM arrays to cut data movement.</p>
+          <p><strong>Result:</strong> Cutting XNOR error from 9.5% to 0.25% raised MNIST accuracy from 58.27% to 89.34%. About 3.17 pJ per CIM operation.</p>
+          <p><strong>My role:</strong> Circuit design in Cadence Virtuoso, 1,200-point Monte Carlo analysis, and the PyTorch framework that links timing variation to accuracy.</p>
+        </div>
+      </article>
+
+      <article class="card vf" id="prj-precis">
+        <img src="images/imc.png" alt="FinFET SRAM circuit schematic">
+        <div class="card-body">
+          <div class="tags small"><span>SRAM-CAM</span><span>FinFET</span><span>7 nm</span></div>
+          <h3>PRECIS-CAM: energy-efficient similarity search</h3>
+          <p><strong>Goal:</strong> Exact Hamming-distance search in SRAM-CAM with less sensing energy.</p>
+          <p><strong>Result:</strong> Initial FF-corner simulations show about 38.6% lower sensing energy than forced fine sensing (controller excluded).</p>
+          <p><strong>My role:</strong> Circuit side: 64-bit bank with 4-bit Hamming slices, parity-assisted sensing, and ngspice evaluation.</p>
+          <p class="status-line">In progress · since Sep 2026</p>
+        </div>
+      </article>
+
+      <article class="card vf" id="prj-ternary">
+        <img src="images/rram.png" alt="Flow from RRAM device modeling to neuromorphic systems">
+        <div class="card-body">
+          <div class="tags small"><span>Memristor</span><span>CIM</span><span>LLM inference</span></div>
+          <h3>Ternary memristive compute-in-memory for LLM inference</h3>
+          <p><strong>Goal:</strong> Ternary weights and ADC-free signed column readout on memristor crossbars.</p>
+          <p><strong>Progress:</strong> Verified Verilog-A memristor models and three-level 1T1R programming in GPDK045/Spectre. Targeting the IHP SG13G2 memristor model.</p>
+          <p><strong>Next:</strong> 64 × 64 crossbar and BitNet b1.58 evaluation of variation, energy and inference accuracy.</p>
+          <p class="status-line">In progress · since Nov 2026</p>
+        </div>
+      </article>
+
+      <article class="card vf" id="prj-hfo2">
+        <img src="images/array.jpg" alt="Memory crossbar array">
+        <div class="card-body">
+          <div class="tags small"><span>Neuromorphic</span><span>RRAM</span><span>Power gating</span></div>
+          <h3>Normally-off LIF neuron with HfO₂ RRAM checkpointing</h3>
+          <p><strong>Goal:</strong> Keep a LIF neuron's membrane state in multi-level HfO₂ 1T1R cells so it can resume after power gating.</p>
+          <p><strong>Plan:</strong> Compare 2-, 4-, 8- and 16-level storage for reconstruction error, spike dynamics and SNN accuracy. Derive the break-even idle time for checkpointing.</p>
+          <p class="status-line">In progress · since Oct 2026</p>
+        </div>
+      </article>
+
+      <article class="card vf">
+        <img src="images/xilinx.png" alt="SRAM-based in-memory computing design flow in Xilinx ISE">
+        <div class="card-body">
+          <div class="tags small"><span>VHDL</span><span>FPGA</span><span>Xilinx ISE</span></div>
+          <h3>SRAM in-memory computing architecture in VHDL</h3>
+          <p><strong>Goal:</strong> A complete compute-in-memory design built from synthesizable RTL.</p>
+          <p><strong>Result:</strong> Memory, compute and control modules joined by an FSM controller. Verified by testbench, waveform analysis and RTL synthesis.</p>
+        </div>
+      </article>
+
+      <article class="card vf">
+        <img class="fit" src="images/riscv-datapath.png" alt="Block diagram of a RISC-V datapath with control unit, register file, ALU and data memory">
+        <div class="card-body">
+          <div class="tags small"><span>RISC-V</span><span>FPGA</span><span>VHDL</span></div>
+          <h3>VHDL–FPGA based RISC-V processor</h3>
+          <p><strong>Goal:</strong> A compact RISC-V processor built for FPGA deployment.</p>
+          <p><strong>Result:</strong> Modular components verified by VHDL testbenches, instruction-level simulation and timing analysis.</p>
+        </div>
+      </article>
+
+      <article class="card vf">
+        <img src="images/opamp.png" alt="Two-stage CMOS op-amp schematic">
+        <div class="card-body">
+          <div class="tags small"><span>Analog IC</span><span>Op-amp</span><span>45 nm GPDK</span></div>
+          <h3>Two-stage CMOS operational amplifier</h3>
+          <p><strong>Goal:</strong> A working op-amp at 45 nm with good gain, bandwidth and stability.</p>
+          <p><strong>Analysis:</strong> Transistor sizing, DC, AC, stability and transient runs covering gain, bandwidth, phase margin, slew rate and power.</p>
+        </div>
+      </article>
+
+      <article class="card vf">
+        <img class="fit tall" src="images/diganta-cansat.png" alt="Rendered CAD model of the BRACU Diganta CanSat">
+        <div class="card-body">
+          <div class="tags small"><span>CanSat</span><span>RF / Telemetry</span><span>Aerospace</span></div>
+          <h3>BRACU Diganta: CanSat communication subsystem</h3>
+          <p><strong>Goal:</strong> Reliable telemetry from a CanSat to the ground.</p>
+          <p><strong>Result:</strong> Global finalist, CanSat Competition 2025 (Virginia, USA). Team competed at TEKNOFEST 2026.</p>
+          <p><strong>My role:</strong> Ground-station antennas, XBee telemetry integration, link-budget analysis, and descent modeling.</p>
+        </div>
+      </article>
+
+      <article class="card vf">
+        <img src="images/rover.jpg" alt="Autonomous agricultural rover">
+        <div class="card-body">
+          <div class="tags small"><span>Robotics</span><span>Precision farming</span><span>Capstone</span></div>
+          <h3>Autonomous agricultural rover</h3>
+          <p><strong>Goal:</strong> Grid-based soil sampling and zone-specific fertilization.</p>
+          <p><strong>Work:</strong> NPK sensing, navigation, motion planning and simulation-based evaluation for data-driven fertilizer management.</p>
+          <p class="status-line">Final-year design project · 2026</p>
+        </div>
+      </article>
+
+      <article class="card vf">
+        <img src="images/CNN.png" alt="CNN floating waste classification">
+        <div class="card-body">
+          <div class="tags small"><span>Deep learning</span><span>CNN</span><span>Environment</span></div>
+          <h3>CNN-based floating waste classification on water surfaces</h3>
+          <p><strong>Goal:</strong> Automated detection of six categories of floating aquatic waste for environmental monitoring.</p>
+          <p><strong>Work:</strong> Data preprocessing, augmentation, model training and performance evaluation.</p>
+        </div>
+      </article>
+
+      <article class="card vf">
+        <img src="images/gcs.png" alt="LoRa ground station for a satellite training kit">
+        <div class="card-body">
+          <div class="tags small"><span>LoRa</span><span>Arduino</span><span>Telemetry</span></div>
+          <h3>Satellite training kit: LoRa ground station</h3>
+          <p><strong>Goal:</strong> Real-time telemetry reception for an educational satellite platform.</p>
+          <p><strong>Work:</strong> Packet decoding, visualization on an Arduino Nano, and communication protocols for satellite-to-ground link demos.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="leadership" class="block">
+    <h2><span class="idx">04</span>Leadership &amp; Service</h2>
+    <div class="timeline">
+      <div class="item vf">
+        <p class="when">2024–2026</p>
+        <h3>Project Manager, BRACU Diganta (CanSat Team)</h3>
+        <p>Led CanSat design, testing, subsystem integration and competition preparation for the 2025 global finals and TEKNOFEST 2026.</p>
+      </div>
+      <div class="item vf">
+        <p class="when">2026–2027</p>
+        <h3>Vice President, BRAC University Electrical and Electronic Club (BUEEC)</h3>
+        <p>Leading technical workshops, student development and research engagement within the EEE community.</p>
+      </div>
+      <div class="item vf">
+        <p class="when">Summer 2024–Spring 2026</p>
+        <h3>Student Mentor, First Year Advising Team (FYAT)</h3>
+        <p>Academic mentoring and peer support for incoming undergraduates through the Office of Academic Advising.</p>
+      </div>
+    </div>
+
+    <h3 class="sub">// awards &amp; honors</h3>
+    <ul class="awards">
+      <li>CanSat Competition 2025 Global Finalist, American Astronautical Society</li>
+      <li>Outstanding FYAT Mentor, Summer 2025</li>
+      <li>Dean's List</li>
+      <li>Merit-based scholarship, 25% tuition</li>
+    </ul>
+  </section>
+
+  <section id="education" class="block">
+    <h2><span class="idx">05</span>Education</h2>
+    <div class="edu vf">
+      <div>
+        <h3>BRAC University, Dhaka</h3>
+        <p>B.Sc. in Electrical and Electronic Engineering · Specialization: Electronics</p>
+      </div>
+      <p class="cgpa">CGPA 3.67 / 4.00 · Summer 2026</p>
+    </div>
+  </section>
+
+  <section id="skills" class="block">
+    <h2><span class="idx">06</span>Technical Skills</h2>
+    <div class="skills">
+      <div class="vf"><h4>VLSI &amp; IC Design</h4><div class="chips"><span>Cadence Virtuoso</span><span>Maestro</span><span>Innovus</span><span>Spectre</span><span>PSpice</span><span>OpenLayout</span><span>OLSim</span><span>ngspice</span><span>ASAP7 PDK</span><span>Intel Quartus</span><span>Xilinx ISE</span><span>Altium Designer</span></div></div>
+      <div class="vf"><h4>Programming &amp; HDL</h4><div class="chips"><span>Python</span><span>PyTorch</span><span>MATLAB</span><span>C</span><span>C++</span><span>Embedded C</span><span>Verilog</span><span>SystemVerilog</span><span>VHDL</span><span>Verilog-A</span></div></div>
+      <div class="vf"><h4>Embedded &amp; Communication</h4><div class="chips"><span>ESP32</span><span>Arduino</span><span>XBee</span><span>LoRa</span><span>Telemetry systems</span><span>Real-time data acquisition</span></div></div>
+      <div class="vf"><h4>Robotics &amp; Design</h4><div class="chips"><span>ROS2</span><span>Webots</span><span>Gazebo</span><span>Fusion 360</span><span>AutoCAD</span></div></div>
+    </div>
+  </section>
+
+  <section id="photos" class="block photo-corner">
+    <h2><span class="idx">07</span>Photo corner</h2>
+    <p class="pc-sub"><span class="acc">//</span> field log: conferences, launch fields and lab days</p>
+
+    <div class="frames">
+      <figure class="frame f" tabindex="0"><img src="images/gallery/isvlsi-talk.jpg" alt="Hasna presenting the SRAM compute-in-memory paper at ISVLSI 2026" loading="lazy"><span class="frame-id">01</span><figcaption><span class="frame-meta">ISVLSI 2026 · KOLKATA, IN</span><span class="frame-title">Presenting our SRAM-CIM paper</span></figcaption></figure>
+      <figure class="frame p" tabindex="0"><img src="images/gallery/isvlsi-group.jpg" alt="Team photo in front of the ISVLSI 2026 banner" loading="lazy"><span class="frame-id">02</span><figcaption><span class="frame-meta">ISVLSI 2026 · KOLKATA, IN</span><span class="frame-title">The ISVLSI 2026 crew</span></figcaption></figure>
+      <figure class="frame p" tabindex="0"><img src="images/gallery/fyat-trophy.jpg" alt="Outstanding FYAT Mentor trophy, Summer 2025" loading="lazy"><span class="frame-id">03</span><figcaption><span class="frame-meta">BRACU · SUMMER 2025</span><span class="frame-title">Outstanding FYAT Mentor</span></figcaption></figure>
+      <figure class="frame p" tabindex="0"><img src="images/gallery/diganta-stage.jpg" alt="BRACU Diganta presentation on stage" loading="lazy"><span class="frame-id">04</span><figcaption><span class="frame-meta">BRAC UNIVERSITY</span><span class="frame-title">BRACU Diganta on the big screen</span></figcaption></figure>
+      <figure class="frame f" tabindex="0"><img src="images/gallery/cansat-aas.jpg" alt="BRACU Diganta team with the Bangladesh and BRAC University flags at the CanSat 2025 finals" loading="lazy"><span class="frame-id">05</span><figcaption><span class="frame-meta">CANSAT 2025 · VIRGINIA, US</span><span class="frame-title">CanSat 2025 global finals</span></figcaption></figure>
+      <figure class="frame p" tabindex="0"><img src="images/gallery/virginia-road.jpg" alt="Team walking along a country road in Virginia" loading="lazy"><span class="frame-id">06</span><figcaption><span class="frame-meta">VIRGINIA, US</span><span class="frame-title">The long walk under a big sky</span></figcaption></figure>
+      <figure class="frame f pos-yagi" tabindex="0"><img src="images/gallery/yagi-sunset.jpg" alt="Hasna aiming a Yagi antenna over the Dhaka skyline at sunset" loading="lazy"><span class="frame-id">07</span><figcaption><span class="frame-meta">RF · ROOFTOP, DHAKA</span><span class="frame-title">Yagi antenna test at sunset</span></figcaption></figure>
+      <figure class="frame p" tabindex="0"><img src="images/gallery/fydp-book.jpg" alt="Holding the bound final-year design project book on the BRAC University rooftop field" loading="lazy"><span class="frame-id">08</span><figcaption><span class="frame-meta">FYDP · BRAC UNIVERSITY</span><span class="frame-title">FYDP book, bound and done</span></figcaption></figure>
+      <figure class="frame" tabindex="0"><img src="images/gallery/cansat-field.jpg" alt="Preparing at the CanSat launch field" loading="lazy"><span class="frame-id">09</span><figcaption><span class="frame-meta">CANSAT 2025 · LAUNCH FIELD</span><span class="frame-title">Launch-day prep</span></figcaption></figure>
+      <figure class="frame" tabindex="0"><img src="images/gallery/fydp-showcase.jpg" alt="Final-year design project showcase with the rover and poster" loading="lazy"><span class="frame-id">10</span><figcaption><span class="frame-meta">FYDP · SHOWCASE</span><span class="frame-title">Rover showcase day</span></figcaption></figure>
+      <figure class="frame" tabindex="0"><img src="images/gallery/cansat-flags.jpg" alt="BRACU Diganta team holding flags outdoors" loading="lazy"><span class="frame-id">11</span><figcaption><span class="frame-meta">CANSAT 2025 · VIRGINIA, US</span><span class="frame-title">Flags out for BRACU Diganta</span></figcaption></figure>
+      <figure class="frame" tabindex="0"><img src="images/gallery/rover-sandbox.jpg" alt="The autonomous agricultural rover in its soil test bed" loading="lazy"><span class="frame-id">12</span><figcaption><span class="frame-meta">FYDP · SOIL TEST BED</span><span class="frame-title">Our rover in the sandbox</span></figcaption></figure>
+      <button class="frame t" type="button" id="frame-random">
+        <span class="term-line"><span class="acc">jui@field-log</span>:~$ ls ./frames</span>
+        <span class="term-line term-out">12 frames · Dhaka · Kolkata · Virginia</span>
+        <span class="term-line"><span class="acc">jui@field-log</span>:~$ ./open --random<span class="cursor"></span></span>
+        <span class="term-hint">click to open a random frame</span>
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="moon" aria-hidden="true">☾</div>
+  <p class="crest">house: slytherin · wand: soldering iron · patronus: still compiling</p>
+  <div class="flipzone">
+    <p class="quote">Keep your simulations converged, your wand steady, and your memory cells honest.</p>
+    <div class="moonlog">
+      <p><span class="u">jui@slytherin-dungeon</span>:~$ ./scan --for nargles ./circuits</p>
+      <p class="o">0 nargles found · 0 wrackspurts in the signal path · all memory cells honest</p>
+      <p><span class="u">jui@slytherin-dungeon</span>:~$ cat /etc/bloodline</p>
+      <p class="o">pure-blood silicon · 99.9999999% Si · doped only on purpose</p>
+      <p><span class="u">jui@slytherin-dungeon</span>:~$ <span class="cursor"></span></p>
+    </div>
+  </div>
+  <button class="flip" type="button" id="flip">↻ read it upside down</button>
+  <p class="copy">© 2026 Hasna Hena Jui</p>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <figure><img src="" alt=""><figcaption class="lb-cap"></figcaption></figure>
+  <span class="lb-hint">[esc] or click to close</span>
+</div>
+
+<script>
+(function () {
+  // photo lightbox + random frame
+  var lb = document.getElementById('lightbox');
+  if (lb) {
+    var big = lb.querySelector('img'), cap = lb.querySelector('.lb-cap');
+    var frames = Array.prototype.slice.call(document.querySelectorAll('.frame:not(.t)'));
+    var open = function (p) {
+      var i = p.querySelector('img');
+      big.src = i.src; big.alt = i.alt;
+      cap.innerHTML = '';
+      var m = document.createElement('span');
+      m.className = 'm';
+      m.textContent = '[' + p.querySelector('.frame-id').textContent + '] ' + p.querySelector('.frame-meta').textContent;
+      cap.appendChild(m);
+      cap.appendChild(document.createTextNode(p.querySelector('.frame-title').textContent));
+      lb.hidden = false;
+      document.body.style.overflow = 'hidden';
+    };
+    frames.forEach(function (p) {
+      p.addEventListener('click', function () { open(p); });
+      p.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(p); }
+      });
+    });
+    var rnd = document.getElementById('frame-random');
+    if (rnd) rnd.addEventListener('click', function () { open(frames[Math.floor(Math.random() * frames.length)]); });
+    var close = function () { lb.hidden = true; big.src = ''; document.body.style.overflow = ''; };
+    lb.addEventListener('click', close);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !lb.hidden) close(); });
+  }
+  // footer: read it upside down
+  var b = document.getElementById('flip'), f = document.querySelector('.footer');
+  if (b && f) {
+    b.addEventListener('click', function () {
+      var on = f.classList.toggle('flipped');
+      b.textContent = on ? '↺ back to normal' : '↻ read it upside down';
+    });
+  }
+})();
+</script>
+</body>
+</html>
